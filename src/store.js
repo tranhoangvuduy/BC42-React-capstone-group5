@@ -5,7 +5,7 @@ import theatherReducer from "./Admin/Slices/theaterSlice";
 
 const store = configureStore({
     reducer: {
-       user: userReducer,
+       userReducer: userReducer,
        movieReducer:movieReducer,
        theatherReducer:theatherReducer,
     },

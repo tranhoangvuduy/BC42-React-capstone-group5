@@ -168,11 +168,7 @@ const AddMovie = () => {
                                   return false;
                                 }
                               }}
-                              // style={{
-                              //   width: "300px",
-                              //   height: "300px",
-                              //   marginRight: "220px",
-                              // }}
+                              
                             >
                               <p className="ant-upload-drag-icon">
                                 <InboxOutlined />
