@@ -4,7 +4,7 @@ import axiosClient from "./axiosClient";
 export const apiGetUserList = async () => {
     const { data } = await axiosClient.get("/QuanLyNguoiDung/LayDanhSachNguoiDung", {
       params: {
-        maNhom: "GP08",
+        maNhom: "GP05",
       },
     });
     return data;

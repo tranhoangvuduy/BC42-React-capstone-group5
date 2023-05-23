@@ -62,7 +62,7 @@ const AddUser = () => {
             email: data.content.email,
             soDT: data.content.soDT,
             maLoaiNguoiDung: data.content.maLoaiNguoiDung,
-            maNhom: "GP08",
+            maNhom: "GP05",
           });
         }
       } catch (error) {

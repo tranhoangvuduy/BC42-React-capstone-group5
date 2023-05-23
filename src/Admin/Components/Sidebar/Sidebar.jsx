@@ -15,7 +15,7 @@ const Sidebar = () => {
     >
       <div className='h-19'>
         <Link to='/admin' className='block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700 text-center text-decoration-none'>
-          <span className='ml-1 font-semibold text-xl'>Admin Panel</span>
+          <span className='ml-1 font-semibold text-xl'>Admin Page</span>
         </Link>
       </div>
       <hr className='h-px border-top-0 mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent'/>
@@ -42,7 +42,7 @@ const Sidebar = () => {
         <Link to='/' className='block text-sm whitespace-nowrap 
         text-slate-700 text-center text-decoration-none'
         >
-          <span className='ml-1 font-semibold text-xl'>Back to Customer Page</span>
+          <span className='ml-1 font-semibold text-xl'>Home Page</span>
         </Link>
       </div>
     </aside>

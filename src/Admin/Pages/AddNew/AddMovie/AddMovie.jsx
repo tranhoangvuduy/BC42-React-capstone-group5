@@ -43,7 +43,7 @@ const AddMovie = () => {
       tenPhim: "",
       trailer: "",
       moTa: "",
-      maNhom: "GP08",
+      maNhom: "GP05",
       ngayKhoiChieu: "",
       danhGia: 0,
       hot: false,

@@ -32,7 +32,7 @@ const MovieEdit = () => {
       ngayKhoiChieu: movieItem.ngayKhoiChieu || "",
       danhGia: movieItem.danhGia || 0,
       hinhAnh: movieItem.hinhAnh || null,
-      maNhom: "GP08",
+      maNhom: "GP05",
       hot: false,
       dangChieu: false,
       sapChieu: false,
@@ -187,11 +187,7 @@ const MovieEdit = () => {
                                     return false;
                                   }
                                 }}
-                                // style={{
-                                //   width: "300px",
-                                //   height: "300px",
-                                //   marginRight: "220px",
-                                // }}
+                                
                               >
                                 <p className="ant-upload-drag-icon">
                                   <InboxOutlined />

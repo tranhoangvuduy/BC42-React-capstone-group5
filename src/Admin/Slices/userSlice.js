@@ -125,26 +125,7 @@ const customerSlice = createSlice({
                 state.error = action.error.message;
             }
             );
-        // builder
-        //     .addCase(userLogin.pending, (state) => {
-        //         state.status = 'loading';
-        //     }
-        //     )
-        //     .addCase(userLogin.fulfilled, (state, action) => {
-        //         localStorage.setItem("isAuthAdmin",JSON.stringify(true))
-        //         return {
-        //             ...state,
-        //             status: 'succeeded',
-        //             admin: action.payload,
-        //             isAuthAdmin:JSON.parse(localStorage.getItem("isAuthAdmin"))
-        //         }
-        //     }
-        //     )
-        //     .addCase(userLogin.rejected, (state, action) => {
-        //         state.status = 'failed';
-        //         state.error = action.error.message;
-        //     }
-        //     );
+       
             
     }
 });
