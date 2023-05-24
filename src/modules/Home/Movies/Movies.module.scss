@@ -1,0 +1,72 @@
+.mySwiper {
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.movieDetails {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.bannerImg {
+  height: 275px;
+  object-fit: cover;
+}
+
+.fontSize {
+  font-size: 14px;
+  color: #757575;
+}
+
+.tenPhim {
+  color: #000;
+  font-size: 18px;
+  max-height: 45px;
+  visibility: visible;
+  font-weight: 500;
+  text-align: center;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 35px;
+
+  button {
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.buyTicket {
+      color: rgb(221, 255, 0);
+      background-color: rgb(255, 127, 155);
+      margin-right: 10px;
+
+      &:hover {
+        background-color: rgb(255, 127, 155);
+        color: rgb(221, 255, 0);
+        border: 1px solid #13c3ef;
+      }
+    }
+
+    &:hover:not(.buyTicket) {
+      background-color: rgb(255, 127, 155);
+      color: rgb(221, 255, 0);
+    }
+  }
+}
