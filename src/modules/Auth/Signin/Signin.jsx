@@ -5,15 +5,16 @@ import { signin } from '../../../slices/userSlice';
 import { Navigate, useSearchParams } from 'react-router-dom';
 import * as yup from "yup"
 import { yupResolver } from "@hookform/resolvers/yup"
+import styles from "./Signin.module.scss"
 
 //  định nghĩa các xác thực cho từng input
 const schema = yup.object({
-    taiKhoan: yup.string().required("Tài khoản không được để trống"),
+    taiKhoan: yup.string().required("*Tài khoản không được để trống*"),
     matKhau: yup
         .string()
-        .required("Mật khẩu không được để trống")
+        .required("*Mật khẩu không được để trống*")
         .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
-        "Mật khẩu ít nhất 8 kí tự, phải có 1 chữ hoa, 1 chữ thường và 1 số"
+        "*Mật khẩu ít nhất 8 kí tự, phải có 1 chữ hoa, 1 chữ thường và 1 số*"
         ),
 })
 
@@ -49,15 +50,15 @@ function Signin() {
     }
 
     return (
-        <div>
+        <div className={styles.content}>
             <h1>Đăng nhập</h1>
             <form onSubmit={handleSubmit(onSubmit, onError)}>
                 <div>
-                    <input type="text" placeholder='Tài khoản' {...register("taiKhoan", {required: {value: true, message: "Tài khoản không được để trống"} })} />
+                    <input  className={styles.input} type="text" placeholder='Tài khoản' {...register("taiKhoan", {required: {value: true, message: "Tài khoản không được để trống"} })} />
                     {errors.taiKhoan && <p>{errors.taiKhoan.message}</p>}
                 </div>
                 <div>
-                    <input type="password" placeholder='Mật khẩu' {...register("matKhau", {required:{
+                    <input  className={styles.input} type="password" placeholder='Mật khẩu' {...register("matKhau", {required:{
                         value:true,
                         message: "Mật khẩu không được để trống",
                          },
@@ -71,7 +72,7 @@ function Signin() {
 
                 {error && <p>{error}</p>}
 
-                <button disabled={isLoading}>Đăng nhập</button>
+                <button className={styles.button}  disabled={isLoading}>Đăng nhập</button>
             </form>
 
         </div>

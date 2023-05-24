@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer style={{ background: "#222", color: "#fff", marginTop: "40px" }}>
+    <footer id="ungdung" style={{ background: "#222", color: "#fff", marginTop: "40px" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "10px 20px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px" }}>
           <div>

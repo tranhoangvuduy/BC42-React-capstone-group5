@@ -17,7 +17,7 @@ const Signup = lazy(() => import("./modules/Auth/Signup/Signup"))
 
 function App() {
   return (
-    <Suspense fallback={<h1>Loading</h1>}>
+    <Suspense fallback={<h1>Loading...</h1>}>
 
       <BrowserRouter>
         <Routes>
