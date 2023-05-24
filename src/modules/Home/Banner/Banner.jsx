@@ -25,7 +25,7 @@ function Banner() {
   useEffect(() => {
     getBanners();
   }, []);
-
+  
   if (error) return null;
 
   // carousel: slick, swiper
