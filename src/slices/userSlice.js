@@ -7,7 +7,7 @@ export const signin = createAsyncThunk("user/signin", async (values) => {
   try {
     const data = await APIlogin(values);
     // Lưu thông tin user vào localStorage để giữ trạng thái đăng nhập
-    localStorage.setItem("user", JSON.stringify(data.content));
+    // localStorage.setItem("user", JSON.stringify(data.content));
     return data.content;
   } catch (error) {
     throw error.response?.data?.content;
@@ -15,7 +15,8 @@ export const signin = createAsyncThunk("user/signin", async (values) => {
 });
 
 const initialState = {
-  user: JSON.parse(localStorage.getItem("user")) || null,
+  user:  null,
+  // user: JSON.parse(localStorage.getItem("user")) || null,
   isLoading: false,
   error: null,
   isAuth:JSON.parse(localStorage.getItem("isAuth"))

@@ -16,3 +16,31 @@ ul {
     border-right: 1px solid #ccc;
     margin: 0 10px;
 }
+.form {
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s;
+    margin-left: 10px;
+}
+.form:hover {
+    color: rgb(221, 255, 0);
+    background-color: rgb(255, 127, 155);
+}
+.hover:hover {
+    color: rgb(221, 255, 0);
+    transition: all .2s;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.content{
+    margin-left: 111px;
+    font-size: 30px;
+    color: rgb(255, 127, 155) ;
+}
+.Nav{
+    font-size: 20px;
+    font-weight: 500;
+}

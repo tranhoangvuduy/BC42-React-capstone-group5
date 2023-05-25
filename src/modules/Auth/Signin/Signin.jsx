@@ -35,8 +35,8 @@ function Signin() {
      }
 
      if(user) {
-      //   return <Navigate to="/" />
-      console.log('dang nhap thanh cong');
+        return <Navigate to="/" />
+      
      }
 
   return (

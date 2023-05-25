@@ -6,7 +6,7 @@ import { notification } from 'antd'
 // Component làm nhiệm vụ kiểm tra khi truy cập vào 1 route cần yêu cầu đăng nhập mới có thể truy cập được
 function AdminProtectRoute() {
     const {pathname}=useLocation();
-    const {user}=useSelector((state)=>state.userReducer);
+    const {user}=useSelector((state)=>state.user);
     //Trường hợp chưa đăng nhập, điều hướng về trang đăng nhập
     if(!user)
     {

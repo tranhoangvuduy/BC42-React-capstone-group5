@@ -14,7 +14,7 @@ const AdminSignin = () => {
 
 
   const [form] = Form.useForm();
-  const { user, error } = useSelector((state) => state.userReducer);
+  const { user, error } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   const formik = useFormik({
