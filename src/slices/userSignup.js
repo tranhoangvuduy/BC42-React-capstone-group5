@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { apiSignup } from "../API/userAPI";
+import { APIsignup } from "../apis/userAPI";
 
 export const signup = createAsyncThunk("user/signup", async (values) => {
-    const data = await apiSignup(values)
+    const data = await APIsignup(values)
     return data.content
 });
 
